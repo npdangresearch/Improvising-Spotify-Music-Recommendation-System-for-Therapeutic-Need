@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mental Awareness Month</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Section 1: Landing Page -->
+  <section id="landing">
+    <h1>Discover your mood with our Mental Awareness Month</h1>
+    <p>Start your Awareness week journey.</p>
+    <button onclick="goToStep('welcome')">Open Mood Check</button>
+  </section>
+
+  <!-- Section 2: Welcome Page -->
+  <section id="welcome" style="display:none;">
+    <h1>Hi UserA,</h1>
+    <p>Are you ready to explore yourself?</p>
+    <button onclick="goToStep('persona')">Next</button>
+  </section>
+
+  <!-- Section 3: Persona Page -->
+  <section id="persona" style="display:none;">
+    <h2>(Persona)</h2>
+    <div id="mood-bars"></div>
+    <p id="persona-text"></p>
+    <button onclick="goToStep('playlist')">Create playlist</button>
+  </section>
+
+  <!-- Section 4: Playlist Page -->
+  <section id="playlist" style="display:none;">
+    <h2>Your personalized playlist</h2>
+    <table>
+      <thead>
+        <tr><th>Track</th><th>Artist</th><th>Time</th></tr>
+      </thead>
+      <tbody id="playlist-body"></tbody>
+    </table>
+    <button>Add to your library</button>
+  </section>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

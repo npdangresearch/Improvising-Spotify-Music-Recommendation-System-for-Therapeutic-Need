@@ -1,0 +1,36 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: radial-gradient(#0f0c29, #302b63, #24243e);
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+section {
+  max-width: 600px;
+  margin: auto;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bar {
+  background: #eee;
+  border-radius: 10px;
+  width: 80%;
+  margin: 10px auto;
+  height: 20px;
+}
+
+.fill {
+  background: #1db954;
+  height: 100%;
+  border-radius: 10px;
+}
